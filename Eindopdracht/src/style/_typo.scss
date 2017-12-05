@@ -1,0 +1,52 @@
+h1 {
+	font-size: 1.8rem;
+	text-align: center;
+	color: $header--xlight;
+	
+	text-transform: uppercase;
+	padding: 150px 0 0 0;
+}
+
+h2 {
+ 	font-size: 1.8rem;
+	text-align: center;
+	color: $header--xlight;
+	padding: 20px;
+}
+
+h3 {
+	vertical-align: middle;
+	font-size: 1.2rem;
+	text-align: center;
+	color: $header;
+	text-transform: uppercase;
+}
+
+p {
+	font-size: 1.4rem;
+	line-height: 1.6rem;
+}
+
+a{
+	text-decoration: none;
+	color: $header;
+}
+
+.title{
+	font-size: 4rem;
+	text-align: center;
+	color: $header;
+	
+	text-transform: uppercase;
+	padding-top: 40px;
+	padding-bottom: 70px; 
+}
+
+button{
+	padding: 10px;
+	background: $header--xlight;
+	border-radius: 5px;
+	border: solid $header--xlight;
+	width: 100px;
+	height: 50px;
+}

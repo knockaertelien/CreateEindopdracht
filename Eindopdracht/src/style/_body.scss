@@ -1,0 +1,10 @@
+body, html {
+	font-family: $font-stack;
+	font-size: 13px;
+	background: $background;
+}
+
+::selection {
+	color: $black;
+	background: $header--light;
+}

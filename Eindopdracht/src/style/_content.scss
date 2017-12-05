@@ -1,0 +1,91 @@
+.content {
+	position: relative;
+	padding-top: 30px;
+}
+
+.wrap {
+	@include wrap(0, 0);
+}
+
+.section1 div{
+	height: 600px;
+}
+
+.section1 table{
+	margin: auto;
+}
+
+.section1 td{
+	vertical-align: middle;
+	padding: 10px;
+	
+}
+
+.section1 h1{
+	height: 50px;
+	background-color: $header--xlight;
+	color: $header;
+	border-radius: 5px;
+	font-size: 2.2rem;
+	text-align: center;
+	vertical-align: middle;
+	text-transform: uppercase;
+	padding: 20px;
+	width: 190px;
+}
+
+.section2 div{
+	height: 600px;
+	padding-top: 200ox;
+}
+
+.section2 table{
+	margin: auto;
+}
+
+.section2 td{
+	vertical-align: middle;
+	padding: 10px;
+}
+
+.section2 h1{
+	height: 50px;
+	background-color: $header--xlight;
+	color: $header;
+	border-radius: 5px;
+	font-size: 2.2rem;
+	text-align: center;
+	vertical-align: middle;
+	text-transform: uppercase;
+	padding: 20px;
+	width: 190px;
+	line-height: 50px;
+}
+
+.title h1{
+	text-align: center;
+
+}
+
+.buttonYes{
+	padding: 30px;
+	display: inline;
+	text-align: center;
+}
+
+.buttonNo{
+	padding: 30px;
+	display: inline;
+}
+
+.button{
+	text-align: center;
+}
+
+.general_div{
+	height: 400px;
+}
+
+.general{
+	vertical-align: middle;
+}

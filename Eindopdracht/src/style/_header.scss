@@ -1,0 +1,149 @@
+.header__meta {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 17px;
+	padding: 3px 0;
+	box-sizing: border-box;
+	
+	font-size: 0; /* Fontsize 0 zetten want 50% + 50% plaatst de text onder elkaar */ 
+
+	background-color: $accent2;
+
+	z-index: 9999; /* 'Diepte' van elementen: 0 - 9999 */
+}
+
+.header__location, .header__login {
+	display: inline-block;
+	vertical-align: middle;
+	width: 50%;
+
+	font-size: .9rem;
+}
+
+.header__country{
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+
+	font-size: 0;
+
+	border-radius: 6px;
+	overflow: hidden;
+
+}
+
+.bar1, .bar2, .bar3 {
+	display: inline-block;
+	width: calc(100%/3);
+	height: 100%;
+	margin: 0;
+}
+
+.bar1 {
+	background-color: black;
+}
+
+.bar2 {
+	background-color: yellow;
+}
+
+.bar3 {
+	background-color: red;
+}
+
+.header__location {
+
+}
+
+.header__login {
+	text-align: right;
+
+	/* & is hier .header__login, dus & a is ".header__login a" */ 
+	& a {
+		text-decoration: none;
+		color: $white;
+	}
+}
+
+.header__navigation {
+	width: 100%;
+
+	font-size: 0;
+
+	background-color: $header;
+	
+	z-index: 9999;
+}
+
+.header__logo {
+	text-align: center;
+	margin-top: 5px;
+}
+
+.header__logo__wordmark {
+	font-family: 'Rozha One', serif;
+	font-size: 1.9rem;
+	text-decoration: none;
+	color: $white;
+	letter-spacing: 1px;
+}
+
+.header__main__navigation {
+
+}
+
+.header__navigation__list {
+	text-align: center;
+	margin: 5px 0;
+}
+
+.header__navigation__item {
+	display: inline-block;
+
+	&:not( :last-of-type) {
+		margin-right: 15px;
+	};
+}
+
+.header__navigation__link {
+	font-size: 1rem;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: $header--light;
+
+	/* .header__navigation__link:hover */
+	&:hover {
+	color: $header--xlight;
+	}
+	
+}
+
+@media screen and (min-width: 480px) {
+	.header__navigation {
+		padding: 5px 0;
+	}
+
+	.header__logo, .header__main__navigation {
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	.header__logo {
+		width: 20%;
+		text-align: left;
+	}
+
+	.header__main__navigation {
+		width: 70%;
+	}
+
+	.header__navigation__list {
+		text-align: right;
+	}
+
+	.img-responsive_logo {
+		height: 50px;
+	}
+
+}
