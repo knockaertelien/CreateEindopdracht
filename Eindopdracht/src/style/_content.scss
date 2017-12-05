@@ -22,7 +22,6 @@
 }
 
 .section1 h1{
-	height: 50px;
 	background-color: $header--xlight;
 	color: $header;
 	border-radius: 5px;
@@ -88,4 +87,19 @@
 
 .general{
 	vertical-align: middle;
+}
+
+.score{
+	color: $header--xlight;
+	text-align: right;
+	padding: 50px 50px 0 0;
+
+	&::selection {
+		background-color: $header--xlight;
+		color: $header;
+	}
+}
+
+.img-responsive_logo{
+	
 }
