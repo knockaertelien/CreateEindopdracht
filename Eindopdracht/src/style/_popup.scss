@@ -1,0 +1,60 @@
+.victoryyy{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(black, 0.8);
+	display: none;
+}
+
+.content {
+	width: 600px;
+	height: 50%;
+	background: linear-gradient(135deg, #31ffa9 0%,#da4dfd 100%);;
+	margin: 0 auto;
+	border-radius: 10px;
+    color: rgb(62, 62, 62);
+    vertical-align: middle;
+
+    @media all and (max-width: 700px) {
+        margin: 0 5%;
+        padding-bottom: 20px;
+        height: 40%;
+    }
+}
+
+.scoreTen{
+	font-size: 150px;
+	padding-top: 50px;
+	font-family: 'Dancing Script', cursive;
+	text-align: center;
+    color: rgb(62, 62, 62);
+    vertical-align: middle;
+    @media all and (max-width: 700px) {
+        font-size: 120px;
+        padding-bottom: 20px;
+        height: 40%;
+    }
+}
+
+.winner{
+    margin-top: 10px;
+	text-align: center;
+	font-size: 50px;
+	font-family: 'Quicksand', sans-serif, cursive;
+	font-style: italic;
+    padding-bottom: 50px;
+    vertical-align: middle;
+    @media all and (max-width: 700px) {
+        font-size: 30px;
+        padding-bottom: 20px;
+        height: 40%;
+    }
+}
+
+.close{
+    width: 23px;
+    float: right;
+    margin-right: 5%;
+}

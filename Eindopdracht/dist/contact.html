@@ -14,13 +14,16 @@
     <header class="header__navigation">
         <div class="wrap">
             <div class="header__logo">
-                <img src="Media/images/trivia.png" class="img-responsive_logo" alt="">
+                <a href="index.html"><img src="Media/images/trivia.png" class="img-responsive_logo" alt=""></a>
             </div>
             <nav class="header__main__navigation">
                 <ul class="header__navigation__list">
                     <li class="header__navigation__item">
                         <a href="index.html" class="header__navigation__link">home</a>
                     </li>
+                    <li class="header__navigation__item">
+                            <a href="categories.html" class="header__navigation__link">categories</a>
+                        </li>
                     <li class="header__navigation__item">
                         <a href="contact.html" class="header__navigation__link">contact</a>
                     </li>
@@ -29,7 +32,17 @@
         </div>
     </header>
 
-    
+    <form class="form">
+        <label for="formName">Name</label>
+        <input type="text" id="formName">
+        <label for="formEmail">Email</label>
+        <input type="text" id="formEmail">
+        <label for="formSubject">Subject</label>
+        <input type="text" id="formSubject">
+        <label for="formMessage">Message</label>
+        <textarea id="formMessage" cols="30" rows="10"></textarea>
+        <button type="submit">Submit</button>
+    </form>
 </body>
 
 </html>

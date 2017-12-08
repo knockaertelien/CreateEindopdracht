@@ -1,0 +1,64 @@
+.form {
+    position: absolute;
+    display: flex;
+    flex-flow: column nowrap;
+    width: 500px;
+    margin: 0 auto;
+    padding: 0 16px;
+
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+    @media all and (max-width: 600px) {
+        width: 350px;
+    }
+
+    label {
+        margin: 12px 0 8px;
+        font-size: 1.4rem;
+        color: $header--xlight;
+    }
+
+    textarea {
+        resize: none;
+        overflow-y: scroll;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        background-color: $header--xlight;
+        border: none;
+        outline: none;
+        border-radius: 3px;
+        margin-bottom: 30px;
+        font-size: 1.2rem;
+        padding: 4px;
+        font-family: $font-stack;
+    }
+
+    input{
+        background-color: $header--xlight;
+        border: none;
+        border-radius: 2px;
+        font-size: 1.2rem;
+        padding: 4px;
+        font-family: $font-stack;
+    }
+
+    button{
+        padding: 5px;
+        font-family: $font-stack;
+        font-size: 1.4rem;
+        color: $header;
+        background: $header--xlight;
+        border-radius: 3px;
+        border: solid $header--xlight;
+        width: 100px;
+        height: 50px;
+        cursor: pointer;
+        &:hover{
+            border-color: $header;
+        }
+    }
+}
+

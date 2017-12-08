@@ -7,82 +7,108 @@
 	@include wrap(0, 0);
 }
 
-.section1 div{
-	height: 600px;
+.section1{
+	font-size: 0;
+	div{
+		height: 600px;
+	}
+	table{
+		margin: auto;
+	}
+	td{
+		vertical-align: middle;
+		padding: 10px;
+	}
+	h1{
+		background-color: $header--xlight;
+		color: $header;
+		border-radius: 5px;
+		font-size: 2.2rem;
+		text-align: center;
+		vertical-align: middle;
+		text-transform: uppercase;
+		padding: 20px;
+		width: 190px;
+	}
 }
 
-.section1 table{
-	margin: auto;
-}
-
-.section1 td{
-	vertical-align: middle;
-	padding: 10px;
-	
-}
-
-.section1 h1{
-	background-color: $header--xlight;
-	color: $header;
-	border-radius: 5px;
-	font-size: 2.2rem;
+.section2{
+	font-size: 0;
 	text-align: center;
-	vertical-align: middle;
-	text-transform: uppercase;
-	padding: 20px;
-	width: 190px;
+	div{
+		height: 600px;
+		padding-top: 200ox;
+	}
+	table{
+		margin: auto;
+	}
+	td{
+		vertical-align: middle;
+		padding: 10px;
+	}
+	h1{
+		height: 50px;
+		background-color: $header--xlight;
+		color: $header;
+		border-radius: 5px;
+		font-size: 2.2rem;
+		text-align: center;
+		vertical-align: middle;
+		text-transform: uppercase;
+		padding: 20px;
+		width: 190px;
+		line-height: 50px;
+	}
 }
-
-.section2 div{
-	height: 600px;
-	padding-top: 200ox;
-}
-
-.section2 table{
-	margin: auto;
-}
-
-.section2 td{
-	vertical-align: middle;
-	padding: 10px;
-}
-
-.section2 h1{
-	height: 50px;
-	background-color: $header--xlight;
-	color: $header;
-	border-radius: 5px;
-	font-size: 2.2rem;
-	text-align: center;
-	vertical-align: middle;
-	text-transform: uppercase;
-	padding: 20px;
-	width: 190px;
-	line-height: 50px;
-}
-
 .title h1{
 	text-align: center;
 
 }
 
 .buttonYes{
+	
 	padding: 30px;
 	display: inline;
 	text-align: center;
 }
 
+.YesButton{
+	padding: 10px;
+	background: $header--xlight;
+	border-radius: 5px;
+	border: solid $header--xlight;
+	width: 100px;
+	height: 50px;
+	cursor: pointer;
+	background-color:rgb(102, 231, 102);
+	border-color: rgb(102, 231, 102);
+}
+
 .buttonNo{
+	
 	padding: 30px;
 	display: inline;
+}
+
+.NoButton{
+	padding: 10px;
+	background: $header--xlight;
+	border-radius: 5px;
+	border: solid $header--xlight;
+	width: 100px;
+	height: 50px;
+	cursor: pointer;
+	background-color:rgb(238, 99, 99);
+	border-color:rgb(238, 99, 99);
 }
 
 .button{
 	text-align: center;
 }
 
-.general_div{
+#general_div{
 	height: 400px;
+	display: block;
 }
 
 .general{
@@ -93,6 +119,8 @@
 	color: $header--xlight;
 	text-align: right;
 	padding: 50px 50px 0 0;
+	font-size: 2.2rem;
+	text-transform: uppercase;
 
 	&::selection {
 		background-color: $header--xlight;
@@ -100,6 +128,119 @@
 	}
 }
 
+.scoreCorrect{
+	color: $header--xlight;
+	text-align: center;
+	padding-top: 50px;
+	font-size: 2rem;
+	text-transform: uppercase;
+}
+
+.scoreIncorrect{
+	color: rgb(238, 99, 99);
+	text-align: center;
+	padding-top: 50px;
+	font-size: 2rem;
+	text-transform: uppercase;
+}
+
 .img-responsive_logo{
+	max-width: 100px;
+	max-height: auto;
+}
+
+a.subject{
+	display: block;
+	width: 80%;
+	margin: 0 auto 20px;
+	background-color: $header--xlight;
+	border-radius: 5px;
+	font-size: 2.2rem;
+	text-transform: uppercase;
+	padding: 20px;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+.question{
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+@media screen and (min-width: 500px){
+	a.subject{
+		display: inline-block;
+		width: 49%;
+
+		&:nth-of-type(2n + 2){
+			margin-left: 2%;
+		}
+	}
+	.section2{
+		margin-left: 10%;
+		margin-right: 10%;
+	}
 	
 }
+
+@media screen and (min-width: 900px){
+	a.subject{
+		display: inline-block;
+		width: calc(96% / 3);
+
+		&:nth-of-type(2n + 2){
+			margin-left: 0;
+		}
+
+		&:nth-of-type(3n + 2){
+			margin-left: 2%;
+			margin-right: 2%;
+		}
+	}
+	.section2{
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+
+	.question{
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+}
+
+@media screen and (min-width: 1200px){
+	a.subject{
+		display: inline-block;
+		width: calc(92% / 4);
+
+		&:nth-of-type(2n + 2){
+			margin-left: 0;
+		}
+
+		&:nth-of-type(3n + 2){
+			margin-left: 0;
+			margin-right: 0;
+		}
+
+		&:nth-of-type(4n + 1){
+			margin-left: 2%;
+			margin-right: 2%;
+		}
+
+		&:nth-of-type(4n + 3){
+			margin-left: 2%;
+			margin-right: 2%;
+		}
+	}
+	.section2{
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+
+	.question{
+		margin-left: 20%;
+		margin-right: 20%;
+	}
+}
+
+
